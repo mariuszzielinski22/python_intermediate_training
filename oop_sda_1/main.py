@@ -1,36 +1,21 @@
 from oop_sda_1.cat import Cat
-from oop_sda_1.dog import Dog
 
 
 def main():
-    cat_object = Cat("Filemon")
-    cat_object_2 = Cat("Mruczek", "miałmiał")
-    cat_object_3 = Cat("Pipak")
-    cat_object_4 = Cat("Jarosław")
-    dog_object = Dog("Burek", "Hauhau")
+    cat_instance_1 = Cat("Kicia")
+    cat_instance_2 = Cat("Mruczek")
+    cat_instance_3 = Cat("Garfield")
+    cat_instance_4 = Cat("Tygrys")
 
-    # cats = [cat_object, cat_object_2, cat_object_3, cat_object_4]
-    animals = []
-    animals.append(cat_object)
-    animals.append(cat_object_2)
-    animals.append(cat_object_3)
-    animals.append(cat_object_4)
-    animals.append(dog_object)
+    cats = [cat_instance_1, cat_instance_2, cat_instance_3, cat_instance_4]
 
-    for animal in animals:
-        sound = animal.make_sound()
-        print(sound)
+    for cat in cats:
+        print(cat.make_sound())
 
-    # cat_object.eat_mouse()
-    # cat_object.eat_mouse()
-    # cat_object.eat_mouse()
+    cat_instance_1.eat_mouse()
+    cat_instance_1.eat_mouse()
+    cat_instance_1.count_eaten_mouses()
 
-    # print("Teraz będzie żarł drugi kot")
-
-    # cat_object_2.eat_mouse()
-
-
-# zmienna sound jest stringiem
 
 if __name__ == "__main__":
     main()

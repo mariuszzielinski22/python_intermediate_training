@@ -1,7 +1,10 @@
-class Dog:
-    def __init__(self, name: str, sound: str):
-        self.name = name
-        self.sound = sound
+from oop_sda_1.animal import Animal
+
+
+class Dog(Animal):
+
+    def __init__(self, name: str, sound: str = 'WoW'):
+        super().__init__(name, sound)
 
     def make_sound(self) -> str:
-        return f'Pies wydaje dźwięk {self.sound} i ma na imię {self.name}'
+        return f"{self.name} makes {self.sound}"
