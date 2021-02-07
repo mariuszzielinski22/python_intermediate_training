@@ -1,6 +1,5 @@
 import sys
 
-
 def case_1():
     # given
     list_of_numbers = [1, 5, 8, 10, 21]

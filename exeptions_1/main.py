@@ -9,9 +9,9 @@ def main():
     # except ValueError as ve:
     #     print(f'{ve.args} returned')
 
-    result = case_3(10, 0)
-    print(result)
-    print(f'Finish')
+    # result = case_3(10, 0)
+    # print(result)
+    # print(f'Finish')
 
     dictionary = {
         "rzeczy": ['butter', 'bread']
