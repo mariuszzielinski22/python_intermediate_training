@@ -22,10 +22,10 @@
 # if __name__ == '__main__':
 #     main()
 
-from decorators.case_2 import read_file
+from decorators.case2 import read_file
 
 
-#def main():
+def main():
 #     a, b = print_hello_world(1, 2)
 #     print(f'In main: {a} {b}')
 #
