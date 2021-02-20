@@ -23,6 +23,8 @@
 #     print(f'{a, b}')
 #     return a, b
 
+def main():
+    read_file(file_path='./abc')
 
 def check_file_wrapper(func):
     def inner(*args, **kwargs):
