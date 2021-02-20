@@ -1,3 +1,6 @@
+from generators.exercise3 import Iterable
+
+
 def iterator_ex_1():
     dictionary = {
         'a': 1,
@@ -29,10 +32,22 @@ def iterator_ex_2(n):
     print(result)
 
 
+def iterator_ex_3(n):
+    print('exercise3')
+    import sys
+    iterator = Iterable(n)
+    print(f'Size of iterator in bytes: {sys.getsizeof(iterator)}')
+    result = sum(iterator)
+    print(f'size one umber in bytes: {sys.getsizeof(result)}')
+    print(result)
+
+
 def main():
     # iterator_ex_1()
-    iterator_ex_2(1000)
-
+    print("Exercise 2")
+    iterator_ex_2(100000)
+    print("Exercise 3")
+    iterator_ex_3(100000)
 
 
 if __name__ == '__main__':
