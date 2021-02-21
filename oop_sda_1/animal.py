@@ -1,4 +1,4 @@
-# from abc import ABC, abstractmethod
+# from abc.txt import ABC, abstractmethod
 #
 #
 # class Animal(ABC):

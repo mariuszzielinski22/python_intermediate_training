@@ -1,4 +1,5 @@
 import json
+# from typing import List, Any
 
 
 class Human:
@@ -23,31 +24,32 @@ class Human:
 
 
 def json_human_to_file(humans: list):
-    humans_serialize = []
+    humans_serialized = []
 
     for human in humans:
         human_dict = human.convert_to_dict()
-        humans_serialize.append(human_dict)
+        humans_serialized.append(human_dict)
 
     try:
         with open("./humans_test.json", "w") as fd:
-            json.dump(humans_serialize, fd, indent=2)
+            json.dump(humans_serialized, fd, indent=2)
     except (IOError, Exception) as e:
         print(f'Problem with writing to file, more info: {e.args}')
 
 def json_human_from_file():
-    humans_serialize = []
+    humans_serialized = []
 
     try:
         with open("./humans_test.json", "r") as fd:
-            humans_serialize = json.load(fd)
+            humans_serialized = json.load(fd)
     except (IOError, Exception) as e:
         print(f'Problem with writing to file, more info: {e.args}')
 
     humans = []
 
-    for human_dict in humans_serialize:
+    for human_dict in humans_serialized:
         human = Human.convert_from_dict(human_dict)
         humans.append(human)
 
     return humans
+

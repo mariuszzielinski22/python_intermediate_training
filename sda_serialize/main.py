@@ -5,8 +5,8 @@
 
 
 def main():
-    # abc = ['bread', 'butter', 'cola']
-    # pickle_write(abc)
+    # abc.txt = ['bread', 'butter', 'cola']
+    # pickle_write(abc.txt)
     # print(pickle_read())
 
     # users = [
